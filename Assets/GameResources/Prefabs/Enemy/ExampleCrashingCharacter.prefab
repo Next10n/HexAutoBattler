@@ -94,6 +94,16 @@ PrefabInstance:
       propertyPath: startHealth
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 2736317145502143406, guid: 61f53a38a492b26468a387e7f1f74a57,
+        type: 3}
+      propertyPath: _speed
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3207849279386362210, guid: 61f53a38a492b26468a387e7f1f74a57,
+        type: 3}
+      propertyPath: _speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3711067545472648968, guid: 61f53a38a492b26468a387e7f1f74a57,
         type: 3}
       propertyPath: m_Mesh

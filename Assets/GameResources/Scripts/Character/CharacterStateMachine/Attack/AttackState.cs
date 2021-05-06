@@ -38,9 +38,16 @@ namespace BattleSystem
         {
             _skeletonAnimation.state.Event += AnimationAction;
             _enemyHealth = _character.Target.Health;
-            _skeletonAnimation.loop = true;
-            _skeletonAnimation.timeScale = _attackController.Speed;
+            _skeletonAnimation.loop = true;           
             ApplyDirection();
+            _skeletonAnimation.timeScale = CalculateTimeScale();
+        }
+
+        private float CalculateTimeScale()
+        {
+            Spine.Animation myAnimation = _skeletonAnimation.Skeleton.Data.FindAnimation(_animationName);
+            float defaultAnimationTime = myAnimation.Duration;
+            return defaultAnimationTime / _attackController.Speed;
         }
 
         public override bool EnterCondition()
