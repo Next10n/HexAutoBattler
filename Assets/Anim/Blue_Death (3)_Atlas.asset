@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: Blue_Death (3)_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 4b2a31a601a6430498c36df064121bc2, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 5b329e2a81b97494d9194e869c02f4b1, type: 2}
+  - {fileID: 2100000, guid: 85665872be813a543a51d01e52a8b665, type: 2}
+  - {fileID: 2100000, guid: 990fa0eccf8a1554fa482da1176c8acb, type: 2}

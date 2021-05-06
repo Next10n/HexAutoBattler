@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e622a7eade75b46b50505fc8aa176e, type: 3}
+  m_Name: SkinContainer
+  m_EditorClassIdentifier: 
+  WeaponSkins:
+  - AttackType: 0
+    SkinName: Weapons/Scythe
+  - AttackType: 1
+    SkinName: Weapons/Spear
+  - AttackType: 2
+    SkinName: Weapons/Mace
+  - AttackType: 3
+    SkinName: Weapons/Wand
+  ArmoprSkins:
+  - ArmorType: 0
+    SkinName: Colors/Blue
+  - ArmorType: 1
+    SkinName: Colors/Orange
+  - ArmorType: 2
+    SkinName: Colors/Green
+  - ArmorType: 3
+    SkinName: Colors/Red
