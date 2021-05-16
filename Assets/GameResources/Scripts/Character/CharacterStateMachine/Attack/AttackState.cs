@@ -21,7 +21,7 @@ namespace BattleSystem
         private Character _character;
         private SkeletonAnimation _skeletonAnimation;
         private Health _enemyHealth;
-        private AttackController _attackController;
+        private AttackComponent _attackComponent;
 
         public readonly float AttackDistance;
 
@@ -47,7 +47,7 @@ namespace BattleSystem
         {
             Spine.Animation myAnimation = _skeletonAnimation.Skeleton.Data.FindAnimation(_animationName);
             float defaultAnimationTime = myAnimation.Duration;
-            return defaultAnimationTime / _attackController.Speed;
+            return defaultAnimationTime / _attackComponent.Speed;
         }
 
         public override bool EnterCondition()
@@ -97,7 +97,7 @@ namespace BattleSystem
         {
             _character = character;
             _skeletonAnimation = character.GetComponent<SkeletonAnimation>();
-            _attackController = character.GetComponent<AttackController>();
+            _attackComponent = character.Attack;
         }
 
         public override void StateAction()
@@ -112,7 +112,7 @@ namespace BattleSystem
             switch (GetCellDirection(_character.Target.CurrentCell))
             {
                 case Neighbour.North:
-                    _animationName = _character.Attack == AttackType.Chopping ? ATTACK_ANIMATION_1 : ATTACK_ANIMATION_INJECTION_1;
+                    _animationName = _character.Attack.Id.Id == "cutting" ? ATTACK_ANIMATION_1 : ATTACK_ANIMATION_INJECTION_1;
                     _flip = true;
                     break;
                 case Neighbour.NorthWest:
@@ -124,7 +124,7 @@ namespace BattleSystem
                     _flip = false;
                     break;
                 case Neighbour.South:
-                    _animationName = _character.Attack == AttackType.Chopping ? ATTACK_ANIMATION_4 : ATTACK_ANIMATION_INJECTION_4;
+                    _animationName = _character.Attack.Id.Id == "cutting" ? ATTACK_ANIMATION_4 : ATTACK_ANIMATION_INJECTION_4;
                     _flip = false;
                     break;
                 case Neighbour.SouthEast:

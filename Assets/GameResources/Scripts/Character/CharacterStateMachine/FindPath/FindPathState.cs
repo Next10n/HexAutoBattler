@@ -105,13 +105,10 @@ namespace BattleSystem
             Dictionary<Character, List<PathElement>> applyArmorEnemyPaths = new Dictionary<Character, List<PathElement>>();
             foreach (KeyValuePair<Character, List<PathElement>> path in paths)
             {
-                ArmorType[] applyingArmor = _attakArmorSettings.GetArmors(_character.Attack);
-                for (int j = 0; j < applyingArmor.Length; j++)
+                ArmorTypeId applyingArmor = _attakArmorSettings.GetArmor(_character.Attack.Id);
+                if (applyingArmor == path.Key.Armor.Id)
                 {
-                    if (applyingArmor[j] == path.Key.Armor)
-                    {
-                        applyArmorEnemyPaths.Add(path.Key, path.Value);
-                    }
+                    applyArmorEnemyPaths.Add(path.Key, path.Value);
                 }
             }
             if(applyArmorEnemyPaths.Count > 0)
@@ -130,13 +127,10 @@ namespace BattleSystem
 
             for (int i = 0; i < characters.Count; i++)
             {
-                ArmorType[] applyingArmor = _attakArmorSettings.GetArmors(_character.Attack);
-                for (int j = 0; j < applyingArmor.Length; j++)
+                ArmorTypeId applyingArmor = _attakArmorSettings.GetArmor(_character.Attack.Id);
+                if(applyingArmor == characters[i].Armor.Id)
                 {
-                    if (applyingArmor[j] == characters[i].Armor)
-                    {
-                        charactersWithArmor.Add(characters[i]);
-                    }
+                    charactersWithArmor.Add(characters[i]);
                 }
             }
             return charactersWithArmor;

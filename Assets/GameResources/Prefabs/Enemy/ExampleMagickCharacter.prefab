@@ -94,6 +94,16 @@ PrefabInstance:
       propertyPath: startHealth
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 893268574208823338, guid: 61f53a38a492b26468a387e7f1f74a57,
+        type: 3}
+      propertyPath: _armorValues.Array.data[0].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 893268574208823338, guid: 61f53a38a492b26468a387e7f1f74a57,
+        type: 3}
+      propertyPath: _armorValues.Array.data[3].value
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2736317145502143406, guid: 61f53a38a492b26468a387e7f1f74a57,
         type: 3}
       propertyPath: _speed
@@ -174,6 +184,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExampleMagickCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 3760987496701603858, guid: 61f53a38a492b26468a387e7f1f74a57,
+        type: 3}
+      propertyPath: _attackTypeId
+      value: 
+      objectReference: {fileID: 11400000, guid: 51b75efaf753c3648b1a0c028edbbfb1,
+        type: 2}
     - target: {fileID: 6090740306138559163, guid: 61f53a38a492b26468a387e7f1f74a57,
         type: 3}
       propertyPath: _armorType

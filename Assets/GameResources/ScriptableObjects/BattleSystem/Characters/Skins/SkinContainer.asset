@@ -13,20 +13,20 @@ MonoBehaviour:
   m_Name: SkinContainer
   m_EditorClassIdentifier: 
   WeaponSkins:
-  - AttackType: 0
+  - AttackType: {fileID: 11400000, guid: 979765795769d7146b5b05a287101ae2, type: 2}
     SkinName: Weapons/Scythe
-  - AttackType: 1
+  - AttackType: {fileID: 11400000, guid: 26b7ea03ab3b0324b980af200aa599de, type: 2}
     SkinName: Weapons/Spear
-  - AttackType: 2
+  - AttackType: {fileID: 11400000, guid: c872673b4f9b7ba48be664bf4e93c45b, type: 2}
     SkinName: Weapons/Mace
-  - AttackType: 3
+  - AttackType: {fileID: 11400000, guid: 51b75efaf753c3648b1a0c028edbbfb1, type: 2}
     SkinName: Weapons/Wand
   ArmoprSkins:
-  - ArmorType: 0
+  - ArmorType: {fileID: 11400000, guid: e69d82486ba8d024d9521e4d5a586db1, type: 2}
     SkinName: Colors/Blue
-  - ArmorType: 1
+  - ArmorType: {fileID: 11400000, guid: 49df9ecbc7f348441bbccbf2fd37c400, type: 2}
     SkinName: Colors/Orange
-  - ArmorType: 2
+  - ArmorType: {fileID: 11400000, guid: e5cc97d308e3d4e4daa8838214744537, type: 2}
     SkinName: Colors/Green
-  - ArmorType: 3
+  - ArmorType: {fileID: 11400000, guid: f4ac2dab75d14a14fa56ad06ba47533c, type: 2}
     SkinName: Colors/Red

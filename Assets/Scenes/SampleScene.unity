@@ -728,10 +728,6 @@ MonoBehaviour:
   spawnPositions: {fileID: 11400000, guid: 81ed16abe5bd7604ea258add56e25a56, type: 2}
   characters:
   - {fileID: 4260310621976827802, guid: 29b951acccd49b54bbd5ebbb0ced7e55, type: 3}
-  - {fileID: 4260310621976827802, guid: 29b951acccd49b54bbd5ebbb0ced7e55, type: 3}
-  - {fileID: 699041501491070933, guid: ceb7df23b88fe2944879eada06a54946, type: 3}
-  - {fileID: 8411546868658123717, guid: 43abe87816ed58a4aad01b2acb732399, type: 3}
-  - {fileID: 9190946116787519204, guid: e28b1f2e112366b449fb974058ad69ff, type: 3}
   characterManager: {fileID: 1809337022}
 --- !u!1 &1135245987
 GameObject:
@@ -1116,10 +1112,6 @@ MonoBehaviour:
   boardController: {fileID: 1395320919}
   spawnPositions: {fileID: 11400000, guid: 808f5a506b9c98742b57552ba6c99aa4, type: 2}
   characters:
-  - {fileID: 8411546868658123717, guid: 0463b259a4aca4e43870cf2a06cd3736, type: 3}
-  - {fileID: 4260310621976827802, guid: 036f5aeeaf88d624e85f033bb8effdfb, type: 3}
-  - {fileID: 699041501491070933, guid: 49bc98d2e79a4d143b4d82c1071837e7, type: 3}
-  - {fileID: 9190946116787519204, guid: 0e721c4c06b75d94f8a942395e3b776a, type: 3}
   - {fileID: 8411546868658123717, guid: 0463b259a4aca4e43870cf2a06cd3736, type: 3}
   characterManager: {fileID: 1809337022}
 --- !u!1 &1972348771
