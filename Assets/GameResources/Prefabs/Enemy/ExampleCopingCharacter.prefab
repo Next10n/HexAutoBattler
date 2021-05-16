@@ -89,6 +89,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 893268574208823338, guid: 61f53a38a492b26468a387e7f1f74a57,
+        type: 3}
+      propertyPath: _armorValues.Array.data[0].value
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 893268574208823338, guid: 61f53a38a492b26468a387e7f1f74a57,
+        type: 3}
+      propertyPath: _armorValues.Array.data[1].value
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2736317145502143406, guid: 61f53a38a492b26468a387e7f1f74a57,
         type: 3}
       propertyPath: _speed
@@ -174,6 +184,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExampleCopingCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 3760987496701603858, guid: 61f53a38a492b26468a387e7f1f74a57,
+        type: 3}
+      propertyPath: _attackTypeId
+      value: 
+      objectReference: {fileID: 11400000, guid: 979765795769d7146b5b05a287101ae2,
+        type: 2}
     - target: {fileID: 7895243816723443849, guid: 61f53a38a492b26468a387e7f1f74a57,
         type: 3}
       propertyPath: m_RootOrder

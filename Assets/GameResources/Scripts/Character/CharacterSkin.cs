@@ -25,8 +25,8 @@ namespace BattleSystem
             Skeleton skeleton = _skeletonAnimation.skeleton;
             SkeletonData data = skeleton.Data;
 
-            var weapon = data.FindSkin(_characterSkinContainer.GetWeaponSkinName(_character.Attack));
-            var armor = data.FindSkin(_characterSkinContainer.GetArmorSkinName(_character.Armor));
+            var weapon = data.FindSkin(_characterSkinContainer.GetWeaponSkinName(_character.Attack.Id));
+            var armor = data.FindSkin(_characterSkinContainer.GetArmorSkinName(_character.Armor.Id));
 
             Skin equipingSkin = new Skin("CombinedSkin");
 

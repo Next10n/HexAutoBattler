@@ -15,18 +15,18 @@ namespace BattleSystem
         [SerializeField] private StateInitializer startState;
 
         [Header("Тип Атаки")]
-        [SerializeField] private AttackType _attackType;
+        [SerializeField] private AttackComponent _attack;
 
         [Header("Тип Защиты")]
-        [SerializeField] private ArmorType _armorType;
+        [SerializeField] private ArmorComponent _armor;
 
         [Header("Выводит в консоль текущий стейт персонажа")]
         [SerializeField] private bool debugState = false;
 
         public CharacterArmyId Id { get; private set; }
 
-        public AttackType Attack => _attackType;
-        public ArmorType Armor => _armorType;
+        public AttackComponent Attack => _attack;
+        public ArmorComponent Armor => _armor;
 
         public IState State { get; private set; }
         public CharacterManager Manager {get; private set;}
@@ -108,21 +108,5 @@ namespace BattleSystem
             }
 
         }
-    }
-
-    public enum AttackType
-    {
-        Chopping,
-        Stabbing,
-        Crushing,
-        Magick
-    }
-
-    public enum ArmorType
-    {
-        Armor,
-        Parry,
-        Dodge,
-        Resistance
     }
 }

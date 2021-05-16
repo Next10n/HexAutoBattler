@@ -12,20 +12,20 @@ namespace BattleSystem
     {
         [SerializeField] private AttackArmorPair[] attackArmorPairs;
 
-        [SerializeField] private ArmorType[] defaultArmors;
+        [SerializeField] private ArmorTypeId defaultArmor;
 
         public AttackArmorPair[] Pairs => attackArmorPairs;
 
-        public ArmorType[] GetArmors(AttackType attackType)
+        public ArmorTypeId GetArmor(AttackTypeId attackType)
         {
             for (int i = 0; i < attackArmorPairs.Length; i++)
             {
                 if(attackArmorPairs[i].Attack == attackType)
                 {
-                    return attackArmorPairs[i].ArmorTypes;
+                    return attackArmorPairs[i].ArmorType;
                 }
             }
-            return defaultArmors;
+            return defaultArmor;
         }
     }
 
@@ -33,8 +33,8 @@ namespace BattleSystem
     [System.Serializable]
     public struct AttackArmorPair
     {
-        public AttackType Attack;
-        public ArmorType[] ArmorTypes;
+        public AttackTypeId Attack;
+        public ArmorTypeId ArmorType;
 
     }
 }

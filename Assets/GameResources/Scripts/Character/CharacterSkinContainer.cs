@@ -13,7 +13,7 @@ namespace BattleSystem
         public WeaponSkin[] WeaponSkins;
         public ArmorSkin[] ArmoprSkins;
 
-        public string GetWeaponSkinName(AttackType attackType)
+        public string GetWeaponSkinName(AttackTypeId attackType)
         {
             foreach(WeaponSkin weaponSkin in WeaponSkins)
             {
@@ -25,7 +25,7 @@ namespace BattleSystem
             return WeaponSkins[0].SkinName;
         }
 
-        public string GetArmorSkinName(ArmorType armorType)
+        public string GetArmorSkinName(ArmorTypeId armorType)
         {
             foreach (ArmorSkin armorSkin in ArmoprSkins)
             {
@@ -41,14 +41,14 @@ namespace BattleSystem
     [System.Serializable]
     public struct WeaponSkin
     {
-        public AttackType AttackType;
+        public AttackTypeId AttackType;
         public string SkinName;
     }
 
     [System.Serializable]
     public struct ArmorSkin
     {
-        public ArmorType ArmorType;
+        public ArmorTypeId ArmorType;
         public string SkinName;
     }
 }
